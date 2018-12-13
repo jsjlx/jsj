@@ -1,17 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="./css/nav.css">
+    <!-- 导航栏css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 自己的css -->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <!-- 轮播的css -->
 </head>
+
 <body>
+    <div class="header">
+        <img class="img-fluid" src="./images/header.png">
+        <div class="container-fluid">
+
+            <div id="delete" class="container">
+
+                <div id='cssmenu'>
+                    <ul>
+                        <li><a href='#'>经贸首页</a></li>
+                        <li><a href='#'>学院首页</a></li>
+                        <li class='active has-sub'><a href='#'>学院概况</a>
+                            <ul>
+                                <li class='has-sub'><a href='#'>学院介绍</a></li>
+                                <li class='has-sub'><a href='#'>学院领导</a></li>
+                                <li class='has-sub'><a href='#'>机构设置</a></li>
+
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'>师资队伍</a>
+                            <ul>
+                                <li class='has-sub'><a href='#'>教研室</a></li>
+                                <li class='has-sub'><a href='#'>教学团队</a></li>
+                            </ul>
+                        </li>
+                        <li class='active'><a href='#'>专业介绍</a></li>
+                        <li class='active has-sub'><a href='#'>教学科研</a>
+                            <ul>
+                                <li class='has-sub'><a href='#'>教学成果</a></li>
+                                <li class='has-sub'><a href='#'>科研服务</a></li>
+                                <li class='has-sub'><a href='#'>技能竞赛</a></li>
+                                <li class='has-sub'><a href='#'>15年竞赛月</a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'>党建工作</a>
+                            <ul>
+                                <li class='has-sub'><a href='#'>理论学习</a></li>
+                                <li class='has-sub'><a href='#'>党务指导</a></li>
+                                <li class='has-sub'><a href='#'>支部动态</a></li>
+
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'>学团工作</a>
+                            <ul>
+                                <li class='has-sub'><a href='#'>队伍建设</a></li>
+                                <li class='has-sub'><a href='#'>学风建设</a></li>
+                                <li class='has-sub'><a href='#'>社团活动</a></li>
+                                <li class='has-sub'><a href='#'>学生风采</a></li>
+                                <li class='has-sub'><a href='#'>学生资助</a></li>
+
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'>就业与创业</a>
+                            <ul>
+                                <li class='has-sub'><a href='#'>创业指导</a></li>
+                                <li class='has-sub'><a href='#'>就业指导</a></li>
+                                <li class='has-sub'><a href='#'>招聘信息</a></li>
+                                <li class='has-sub'><a href='#'>优秀毕业生</a></li>
+                            </ul>
+                        </li>
+                        <li class='active has-sub'><a href='#'>校企合作</a>
+                            <ul>
+                                <li class='has-sub'><a href='#'>企业简介</a></li>
+                                <li class='has-sub'><a href='#'>合作交流</a></li>
+                                <li class='has-sub'><a href='#'>学院概况</a></li>
+                                <li class='has-sub'><a href='#'>学院概况</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href='#'>专业介绍</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    
+
+
+
+    <div class="swiper-container container-fluid">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="img-fluid" src="./images/banner1.jpg">
+                <div class="text">
+                    <h2>计算机工程学院</h2>
+                    <div>
+                        <p>这里是对新闻标题的一些概述这里是对新闻标题的一些概述这里是对新闻标题的一些概述这里是对新闻标题的一些概述</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img class="img-fluid" src="./images/banner2.jpg">
+                <div class="text">
+                    <h2>河南经贸职业学院</h2>
+                    <div>
+                        <p>这里是对新闻标题的一些概述这里是对新闻标题的一些概述这里是对新闻标题的一些概述这里是对新闻标题的一些概述</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img class="img-fluid" src="./images/banner3.jpg">
+                <div class="text">
+                    <h2>龙子湖高校园区</h2>
+                    <div>
+                        <p>这里是对新闻标题的一些概述这里是对新闻标题的一些概述这里是对新闻标题的一些概述这里是对新闻标题的一些概述</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev" style="z-index: 999;"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/jquery-latest.min.js"></script>
+    <!-- 导航栏js引入 -->
+    <script src="./js/swiper.min.js"></script>
+    <!-- 轮播js -->
+    <script src="./js/js.js"></script>
+    <!-- 自己的js -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- bootstarp -->
     <script src="./js/jquery-1.9.1.min.js"></script>
+    <!-- bootstarp -->
 </body>
+
 </html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  font-size: 100px;
+  font-family: '微软雅黑';
+  line-height: 0;
+}
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 70px;
+  }
+}
+.header .container-fluid {
+  background-color: #0081c6;
+}
+.header .container-fluid #cssmenu {
+  margin: 0 auto;
+  background-color: #0081c6;
+}
+.header .container-fluid #cssmenu ul {
+  z-index: 999;
+}
+.header .container-fluid #cssmenu ul li {
+  position: relative;
+}
+.header .container-fluid #cssmenu ul li li:hover {
+  top: -5px;
+  transition: transform 4s;
+  box-shadow: 4px 4px 5px #ccc;
+}
+.header .container-fluid #cssmenu ul li a {
+  color: white;
+  font-size: 0.14rem;
+}
+.swiper-container {
+  position: relative;
+}
+.swiper-container .text {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 20%;
+}
+.swiper-container .text h2 {
+  font-size: .36rem;
+  color: white;
+}
+.swiper-container .text div {
+  width: 500px;
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.swiper-container .text div p {
+  font-size: 0.2rem;
+  color: white;
+  line-height: 20px;
+}
