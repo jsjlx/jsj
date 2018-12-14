@@ -56,3 +56,10 @@
   color: white;
   line-height: 20px;
 }
+.content{
+  background-color:;
+}
+.content .news{
+  height: 200px;
+  background-color: red;
+}
