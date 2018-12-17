@@ -38,7 +38,7 @@
           cssmenu.find('li ul').parent().addClass('has-sub');
   
           multiTg = function() {
-            cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
+            cssmenu.find(".has-sub-b").prepend('<span class="submenu-button"></span>');
             cssmenu.find('.submenu-button').on('click', function() {
               $(this).toggleClass('submenu-opened');
               if ($(this).siblings('ul').hasClass('open')) {
@@ -120,22 +120,27 @@
   });
   })(jQuery);
 
-
+// banner swiper start
 window.onload = function() {
    
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.banner', {
       direction: 'horizontal', // 垂直切换选项
       loop: true, // 循环模式选项
       //鼠标移上去变小手
-      grabCursor : true,
+      // grabCursor : true,
       //切换速度
-      speed: 2000,
+      speed: 1500,
       autoplay: {
-        delay:2000
+        delay:3000
       },
       // 如果需要分页器
-      pagination: {
-        el: '.swiper-pagination',
+      // pagination: {
+      //   el: '.swiper-pagination',
+      // },
+      //切换效果
+      effect : 'fade',
+      fadeEffect: {
+        crossFade: true,
       },
       
       // 如果需要前进后退按钮
@@ -145,13 +150,50 @@ window.onload = function() {
       },
       
       // 如果需要滚动条
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
+      // scrollbar: {
+      //   el: '.swiper-scrollbar',
+      // },
       //强制加载所有图片
       // preloadImages:false,
     })        
 }
+//banner swiper End
+
+
+// teacher swiper
+var swiper = new Swiper('.case', {
+  slidesPerView: 4,
+  spaceBetween: 50,
+  // init: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    }
+  }
+});
+
+// teacher swiper End
 
   
 

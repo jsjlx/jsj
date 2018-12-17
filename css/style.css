@@ -9,6 +9,11 @@
     font-size: 70px;
   }
 }
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 50px;
+  }
+}
 .header .container-fluid {
   background-color: #0081c6;
 }
@@ -22,10 +27,8 @@
 .header .container-fluid #cssmenu ul li {
   position: relative;
 }
-.header .container-fluid #cssmenu ul li li:hover {
-  top: -5px;
-  transition: transform 4s;
-  box-shadow: 4px 4px 5px #ccc;
+.header .container-fluid #cssmenu ul li li a:hover {
+  background-color: #50baf3;
 }
 .header .container-fluid #cssmenu ul li a {
   color: white;
@@ -41,18 +44,491 @@
   left: 20%;
 }
 .swiper-container .text h2 {
+  width: 4rem;
   font-size: .36rem;
   color: white;
-}
-.swiper-container .text div {
-  width: 500px;
-  height: 100px;
+  text-shadow: 4px 4px 2px black;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.swiper-container .text h2 a {
+  font-size: .36rem;
+  color: white;
+}
+.swiper-container .text h2 a:hover {
+  text-decoration: none;
+}
+.swiper-container .text div {
+  width: 5rem;
+  height: 100px;
+}
 .swiper-container .text div p {
   font-size: 0.2rem;
   color: white;
+  line-height: 25px;
+  text-shadow: 4px 3px 2px black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.swiper-container .text div p a {
+  font-size: 0.2rem;
+  color: white;
+}
+.swiper-container .text div p a:hover {
+  text-decoration: none;
+}
+.content .news {
+  margin-top: .4rem;
+}
+.content .news h3 {
+  font-size: .24rem;
+  margin-bottom: .15rem;
+}
+.content .news h3 span {
+  margin-right: 10px;
+  font-size: .24rem;
+  color: #3aaadc;
+}
+.content .news .hr {
+  padding: 0;
+  margin-bottom: 0;
+}
+.content .news .hr hr {
+  margin-bottom: 0;
+  margin-top: .15rem;
+  background-color: #ccc;
+}
+.content .news .hr a {
+  white-space: nowrap;
+  margin-top: 10px;
+  font-size: .13rem;
+}
+.content .news .hr a:hover {
+  text-decoration: none;
+}
+.content .news .row1 .news {
+  padding-left: 0px;
+  background-color: #ffffff;
+  height: auto;
+  transition: all .6s;
+  border: 1px solid #ccc;
+}
+.content .news .row1 .news .u-img {
+  padding-left: 0;
+  height: 100%;
+  padding-right: 0;
+}
+.content .news .row1 .news .title {
+  padding: 0;
+  padding-left: .08rem;
+}
+.content .news .row1 .news .title h4 {
+  position: relative;
+  top: 15%;
+  font-size: .12rem;
+  margin: 0;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content .news .row1 .news .title p {
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
+  height: auto;
   line-height: 20px;
+  position: relative;
+  top: 45%;
+  font-size: .13rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content .news .row1 .news:hover {
+  box-shadow: 4px 4px 4px #999;
+  cursor: pointer;
+}
+.content .inform-group {
+  margin-top: 65px;
+}
+.content .inform-group .notice {
+  margin-bottom: .2rem;
+}
+.content .inform-group .notice h3 {
+  font-size: .24rem;
+  margin-bottom: .15rem;
+}
+.content .inform-group .notice h3 span {
+  font-size: .24rem;
+  color: #3aaadc;
+}
+.content .inform-group .notice .hr hr {
+  margin-bottom: 0;
+  margin-top: .15rem;
+  background-color: #ccc;
+}
+.content .inform-group .notice .hr a {
+  margin-top: 10px;
+  font-size: .13rem;
+  white-space: nowrap;
+}
+.content .inform-group .notice .hr a:hover {
+  text-decoration: none;
+}
+.content .inform-group .notice .table {
+  margin-left: 8px;
+  margin-bottom: 0;
+  margin-top: .2rem;
+}
+.content .inform-group .notice .table tr {
+  transition: all .8s;
+}
+.content .inform-group .notice .table tr :hover {
+  cursor: pointer;
+}
+.content .inform-group .notice .table tr td:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  padding-top: .1rem;
+  padding-bottom: .12rem;
+  padding-left: .06rem;
+  line-height: .16rem;
+  font-size: .14rem;
+}
+.content .inform-group .notice .table tr td:nth-child(1) li {
+  margin: 0;
+  font-size: .14rem;
+  line-height: .18rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 1.2px;
+}
+.content .inform-group .notice .table tr td:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  padding-left: .06rem;
+  line-height: .16rem;
+  font-size: .14rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+.content .inform-group .active h3 {
+  font-size: .24rem;
+  margin-bottom: .15rem;
+}
+.content .inform-group .active h3 span {
+  font-size: .24rem;
+  color: #3aaadc;
+}
+.content .inform-group .active .hr hr {
+  margin-bottom: 0;
+  margin-top: .15rem;
+  background-color: #ccc;
+}
+.content .inform-group .active .hr a {
+  margin-top: 10px;
+  font-size: .13rem;
+  white-space: nowrap;
+}
+.content .inform-group .active .hr a:hover {
+  text-decoration: none;
+}
+.content .inform-group .active .table {
+  margin-bottom: 0;
+  margin-top: .2rem;
+}
+.content .inform-group .active .table tr {
+  transition: all .8s;
+}
+.content .inform-group .active .table tr :hover {
+  cursor: pointer;
+}
+.content .inform-group .active .table tr td:nth-child(1) {
+  margin: 0;
+  padding: 0;
+  padding-top: .1rem;
+  padding-bottom: .12rem;
+  padding-left: .06rem;
+  line-height: .16rem;
+  font-size: .14rem;
+}
+.content .inform-group .active .table tr td:nth-child(1) li {
+  margin: 0;
+  font-size: .14rem;
+  line-height: .18rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  letter-spacing: 1.2px;
+}
+.content .inform-group .active .table tr td:nth-child(2) {
+  margin: 0;
+  padding: 0;
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  padding-left: .06rem;
+  line-height: .16rem;
+  font-size: .14rem;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+.content .specialty {
+  margin-top: .9rem;
+}
+.content .specialty .title li {
+  list-style: none;
+}
+.content .specialty .title li span {
+  text-align: center;
+  font-size: .63rem;
+  margin: 0 ;
+  margin-top: .2rem;
+  color: #3aaadc;
+}
+.content .specialty .title li h3 {
+  margin: .2rem;
+  font-size: .36rem;
+}
+.content .specialty .subjects {
+  margin-top: .5rem;
+}
+.content .specialty .subjects .subjects {
+  margin-top: .2rem;
+  border-radius: 1%;
+  padding-left: .05rem;
+  padding-right: .05rem;
+  transition: all .6s;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.content .specialty .subjects .subjects h4 {
+  font-size: .13rem;
+  font-weight: bold;
+  margin-bottom: .08rem;
+  text-align: center;
+}
+.content .specialty .subjects .subjects p {
+  color: #999;
+  display: block;
+  width: 90%;
+  line-height: .20rem;
+  font-size: .13rem;
+  margin-bottom: .1rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
+  height: .60rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  letter-spacing: 1.2px;
+}
+.content .specialty .subjects .subjects .u-img {
+  margin-top: .10rem;
+  padding-bottom: .08rem;
+}
+.content .specialty .subjects .subjects:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 4px #999;
+  transform: rotatex(10px);
+}
+.content .teacher {
+  margin-top: .9rem;
+}
+.content .teacher .title li {
+  list-style: none;
+}
+.content .teacher .title li span {
+  text-align: center;
+  font-size: .63rem;
+  margin: 0 ;
+  margin-top: .2rem;
+  color: #3aaadc;
+}
+.content .teacher .title li h3 {
+  margin: .3rem;
+  font-size: .36rem;
+}
+.content .teacher .case {
+  width: 100%;
+}
+.content .teacher .case .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: auto;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: all .6s;
+}
+.content .teacher .case .swiper-slide:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.content .cooperation {
+  margin-top: .9rem;
+}
+.content .cooperation .school h3 {
+  font-size: .24rem;
+  margin-bottom: .15rem;
+}
+.content .cooperation .school h3 span {
+  font-size: .32rem;
+  color: #3aaadc;
+}
+.content .cooperation .school .hr hr {
+  margin-bottom: 0;
+  margin-top: .15rem;
+  background-color: #ccc;
+}
+.content .cooperation .school .hr a {
+  margin-top: 10px;
+  font-size: .13rem;
+  white-space: nowrap;
+}
+.content .cooperation .school .hr a:hover {
+  text-decoration: none;
+}
+.content .cooperation .school .cooperation1 {
+  margin-bottom: .35rem;
+  transition: all .6s;
+  margin-top: .13rem;
+  border: 1px solid #ccc;
+}
+.content .cooperation .school .cooperation1 :hover {
+  cursor: pointer;
+}
+.content .cooperation .school .cooperation1 h4 {
+  font-size: .18rem;
+  font-weight: bold;
+  margin: .1rem 0 0 .1rem;
+}
+.content .cooperation .school .cooperation1 p {
+  line-height: .16rem;
+  margin: .1rem 0 .10rem .1rem;
+}
+.content .cooperation .school .cooperation1 p .time {
+  padding-left: 0;
+}
+.content .cooperation .school .cooperation1 p .icon {
+  font-weight: bold;
+  color: #3aaadc;
+}
+.content .cooperation .school .cooperation1 p span {
+  line-height: .16rem;
+  font-size: .14rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content .cooperation .school .cooperation1 p span a {
+  font-size: .14rem;
+  white-space: nowrap;
+}
+.content .cooperation .school .cooperation1 p span a:hover {
+  text-decoration: none;
+}
+.content .cooperation .school .cooperation1:hover {
+  box-shadow: 4px 4px 4px #ccc;
+}
+.content .cooperation .scenery h3 {
+  font-size: .24rem;
+  margin-bottom: .15rem;
+}
+.content .cooperation .scenery h3 span {
+  font-size: .32rem;
+  color: #3aaadc;
+}
+.content .cooperation .scenery .hr hr {
+  margin-bottom: 0;
+  margin-top: .15rem;
+  background-color: #ccc;
+}
+.content .cooperation .scenery .hr a {
+  margin-top: 10px;
+  font-size: .13rem;
+  white-space: nowrap;
+}
+.content .cooperation .scenery .hr a:hover {
+  text-decoration: none;
+}
+.content .cooperation .scenery .video {
+  margin-top: .1rem;
+}
+.content .cooperation .scenery .video video {
+  padding: 0;
+}
+.footer {
+  margin-top: 90px;
+  background-color: #e1e0e0;
+}
+.footer .footernav .row {
+  background-color: #999;
+}
+.footer .footernav .row ul {
+  margin-bottom: .27rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+.footer .footernav .row ul li {
+  font-size: .13rem;
+  margin-top: .1rem;
+  line-height: .18rem;
+  clear: both;
+  list-style: none;
+  text-align: center;
+}
+.footer .footernav .row ul li a {
+  text-align: center;
+  color: white;
+  font-size: .14rem;
+}
+.footer .footernav .row ul li a:hover {
+  text-decoration: none;
+}
+.footer .foot {
+  padding-top: .2rem;
+  background-color: #333;
+}
+.footer .foot .row .copyright P {
+  line-height: .18rem;
+  margin-top: .2rem;
+  margin-bottom: .1rem;
+  font-size: .16rem;
+  color: white;
+}
+.footer .foot .row .copyright P a {
+  font-size: .16rem;
+  color: white;
+}
+.footer .foot .row .copyright P a:hover {
+  text-decoration: none;
+}
+.footer .foot .row .code {
+  text-align: right;
+}
+.footer1 {
+  background-color: #999;
+}
+.footer2 {
+  background-color: #333;
+  margin-top: 0;
 }

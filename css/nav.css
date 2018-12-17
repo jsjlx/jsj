@@ -125,6 +125,7 @@
   margin-right: 100%;
 }
 #cssmenu ul ul li {
+  text-align: center;
   height: 0;
   -webkit-transition: height .2s ease;
   -moz-transition: height .2s ease;
@@ -152,34 +153,14 @@
 #cssmenu ul ul li a:hover {
   color: #ffffff;
 }
-#cssmenu ul ul li.has-sub > a::after {
-  position: absolute;
-  top: 13px;
-  right: 10px;
-  width: 4px;
-  height: 4px;
-  border-bottom: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
-  content: "";
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transition: border-color 0.4s ease;
-  -moz-transition: border-color 0.4s ease;
-  -ms-transition: border-color 0.4s ease;
-  -o-transition: border-color 0.4s ease;
-  transition: border-color 0.4s ease;
-}
-#cssmenu.align-right ul ul li.has-sub > a::after {
+/* #cssmenu.align-right ul ul li.has-sub > a::after {
   right: auto;
   left: 10px;
   border-bottom: 0;
   border-right: 0;
   border-top: 1px solid #dddddd;
   border-left: 1px solid #dddddd;
-}
+} */
 #cssmenu ul ul li.has-sub:hover > a::after {
   border-color: #ffffff;
 }
