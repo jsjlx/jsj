@@ -1,14 +1,4 @@
-// window.onresize = add()
-// function add(){
-//     var wid= window.innerWidth;
-//     console.log(wid);
-    
-//     if(wid <= 992){
-//         document.getElementById("delete").classList.remove("container");
-//     } else if( wid>992){
-//         document.getElementById("delete").className+="container";
-//     }
-// }
+
 (function($) {
 
     $.fn.menumaker = function(options) {

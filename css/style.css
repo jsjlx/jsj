@@ -6,12 +6,12 @@
 }
 @media screen and (max-width: 1200px) {
   * {
-    font-size: 70px;
+    font-size: 80px;
   }
 }
 @media screen and (max-width: 768px) {
   * {
-    font-size: 50px;
+    font-size: 65px;
   }
 }
 .header .container-fluid {
@@ -40,7 +40,7 @@
 .swiper-container .text {
   position: absolute;
   z-index: 999;
-  top: 50%;
+  top: 40%;
   left: 20%;
 }
 .swiper-container .text h2 {
@@ -88,8 +88,19 @@
 }
 .content .news h3 span {
   margin-right: 10px;
-  font-size: .24rem;
+  font-size: .26rem;
   color: #3aaadc;
+}
+.content .news h3 a {
+  font-size: .24rem;
+  color: black;
+  transition: all .3s;
+  font-weight: bold;
+}
+.content .news h3 a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: .25rem;
 }
 .content .news .hr {
   padding: 0;
@@ -107,6 +118,9 @@
 }
 .content .news .hr a:hover {
   text-decoration: none;
+}
+.content .news .row1 {
+  padding-left: 15px;
 }
 .content .news .row1 .news {
   padding-left: 0px;
@@ -162,8 +176,19 @@
   margin-bottom: .15rem;
 }
 .content .inform-group .notice h3 span {
-  font-size: .24rem;
+  font-size: .26rem;
   color: #3aaadc;
+}
+.content .inform-group .notice h3 a {
+  font-size: .24rem;
+  color: black;
+  transition: all .3s;
+  font-weight: bold;
+}
+.content .inform-group .notice h3 a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+  font-size: .25rem;
 }
 .content .inform-group .notice .hr hr {
   margin-bottom: 0;
@@ -223,8 +248,19 @@
   margin-bottom: .15rem;
 }
 .content .inform-group .active h3 span {
-  font-size: .24rem;
+  font-size: .26rem;
   color: #3aaadc;
+}
+.content .inform-group .active h3 a {
+  font-size: .24rem;
+  color: black;
+  transition: all .3s;
+  font-weight: bold;
+}
+.content .inform-group .active h3 a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: .25rem;
 }
 .content .inform-group .active .hr hr {
   margin-bottom: 0;
@@ -286,7 +322,7 @@
 }
 .content .specialty .title li span {
   text-align: center;
-  font-size: .63rem;
+  font-size: .75rem;
   margin: 0 ;
   margin-top: .2rem;
   color: #3aaadc;
@@ -294,6 +330,17 @@
 .content .specialty .title li h3 {
   margin: .2rem;
   font-size: .36rem;
+}
+.content .specialty .title li h3 a {
+  font-size: .36rem;
+  color: black;
+  transition: all .3s;
+  font-weight: bold;
+}
+.content .specialty .title li h3 a:hover {
+  opacity: .7;
+  text-decoration: none;
+  font-size: .37rem;
 }
 .content .specialty .subjects {
   margin-top: .5rem;
@@ -347,7 +394,7 @@
 }
 .content .teacher .title li span {
   text-align: center;
-  font-size: .63rem;
+  font-size: .7rem;
   margin: 0 ;
   margin-top: .2rem;
   color: #3aaadc;
@@ -355,6 +402,17 @@
 .content .teacher .title li h3 {
   margin: .3rem;
   font-size: .36rem;
+}
+.content .teacher .title li h3 a {
+  transition: all .3s;
+  font-size: .36rem;
+  color: black;
+  font-weight: bold;
+}
+.content .teacher .title li h3 a:hover {
+  text-decoration: none;
+  opacity: .7;
+  font-size: .37rem;
 }
 .content .teacher .case {
   width: 100%;
@@ -393,6 +451,16 @@
 .content .cooperation .school h3 span {
   font-size: .32rem;
   color: #3aaadc;
+}
+.content .cooperation .school h3 a {
+  color: black;
+  font-size: .24rem;
+  transition: all .3s;
+}
+.content .cooperation .school h3 a:hover {
+  font-size: .25rem;
+  opacity: .7;
+  text-decoration: none;
 }
 .content .cooperation .school .hr hr {
   margin-bottom: 0;
@@ -457,6 +525,16 @@
   font-size: .32rem;
   color: #3aaadc;
 }
+.content .cooperation .scenery h3 a {
+  color: black;
+  font-size: .24rem;
+  transition: all .3s;
+}
+.content .cooperation .scenery h3 a:hover {
+  font-size: .25rem;
+  opacity: .7;
+  text-decoration: none;
+}
 .content .cooperation .scenery .hr hr {
   margin-bottom: 0;
   margin-top: .15rem;
@@ -481,7 +559,7 @@
   background-color: #e1e0e0;
 }
 .footer .footernav .row {
-  background-color: #999;
+  background-color: #2ba7e5;
 }
 .footer .footernav .row ul {
   margin-bottom: .27rem;
@@ -505,8 +583,9 @@
   text-decoration: none;
 }
 .footer .foot {
+  padding-bottom: .2rem;
   padding-top: .2rem;
-  background-color: #333;
+  background-color: #0081c6;
 }
 .footer .foot .row .copyright P {
   line-height: .18rem;
@@ -526,9 +605,97 @@
   text-align: right;
 }
 .footer1 {
-  background-color: #999;
+  background-color: #2ba7e5;
 }
 .footer2 {
-  background-color: #333;
+  background-color: #0081c6;
   margin-top: 0;
+}
+.catalog {
+  background-color: #ccc;
+  margin-top: 40px;
+}
+.catalog .catalog-left {
+  padding: 0;
+  margin-top: .2rem;
+  background-color: #999;
+}
+.catalog .catalog-left span:nth-child(1) {
+  text-align: center;
+  background-color: white;
+}
+.catalog .catalog-left span:nth-child(1) a {
+  font-size: .2rem;
+}
+.catalog .catalog-left span {
+  text-align: center;
+  padding: .10rem;
+  display: block;
+  background-color: #666;
+}
+.catalog .catalog-left span a {
+  display: block;
+  line-height: .18rem;
+  font-size: .16rem;
+  color: black;
+}
+.catalog .catalog-left span a:hover {
+  text-decoration: none;
+}
+.catalog .catalog-left span:hover {
+  background-color: red;
+  cursor: pointer;
+}
+.catalog .catalog-right {
+  height: 200px;
+  background-color: red;
+  margin-top: .2rem;
+}
+.catalog .catalog-right .src p {
+  margin: 0;
+}
+.catalog .catalog-right .src p span {
+  font-size: .16rem;
+}
+.catalog .catalog-right .src p a {
+  font-size: .16rem;
+  color: black;
+}
+.main {
+  margin-top: 40px;
+  padding-top: 20px;
+  border: 1px solid #ccc;
+  padding-bottom: .6rem;
+}
+.main .src p {
+  line-height: .18rem;
+}
+.main .src p span {
+  font-size: .16rem;
+}
+.main .src p a {
+  font-size: .16rem;
+  color: black;
+}
+.main .src p a:hover {
+  text-decoration: none;
+}
+.main h2 {
+  font-size: .24rem;
+  text-align: center;
+  margin-top: .3rem;
+}
+.main hr {
+  border: none;
+  border-top: 2px solid #999;
+  margin-top: .1rem;
+  margin-bottom: .2rem;
+}
+.main p {
+  margin-bottom: .15rem;
+  font-size: .16rem;
+  line-height: .18rem;
+}
+.main .u-img {
+  margin: 0 auto;
 }
