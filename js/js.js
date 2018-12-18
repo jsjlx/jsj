@@ -66,7 +66,7 @@
   
   $(document).ready(function() {
     $("#cssmenu").menumaker({
-      title: "<h1 style='font-size:.20rem;margin:0;color:white;'>计算机工程学院</h1>",
+      title: "<h1 style='font-size:.25rem;margin:0;color:white;font-weight:bold;'>计算机工程学院</h1>",
       format: "multitoggle"
     });       
   
