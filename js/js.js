@@ -66,9 +66,9 @@
   
   $(document).ready(function() {
     $("#cssmenu").menumaker({
-      title: "计算机工程学院",
+      title: "<h1 style='font-size:.20rem;margin:0;color:white;'>计算机工程学院</h1>",
       format: "multitoggle"
-    });
+    });       
   
     // $("#cssmenu").prepend("<div id='menu-line'></div>");
   
@@ -175,8 +175,7 @@ var swiper = new Swiper('.case', {
     640: {
       slidesPerView: 2,
       spaceBetween: 20,
-    },
-    320: {
+    },    320: {
       slidesPerView: 1,
       spaceBetween: 10,
     }
