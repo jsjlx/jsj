@@ -148,7 +148,7 @@
   text-overflow: ellipsis;
 }
 .content .news .row1 .news .title h4 a {
-  font-size: .12rem;
+  font-size: .14rem;
   color: black;
   font-weight: bold;
 }
@@ -169,7 +169,7 @@
   text-overflow: ellipsis;
 }
 .content .news .row1 .news .title p a {
-  font-size: .12rem;
+  font-size: .13rem;
   color: black;
 }
 .content .news .row1 .news .title p a:hover {
@@ -247,7 +247,7 @@
   letter-spacing: 1.2px;
 }
 .content .inform-group .notice .table tr td:nth-child(1) li a {
-  font-size: .14rem;
+  font-size: .16rem;
   letter-spacing: 1.2px;
   color: black;
 }
@@ -318,7 +318,7 @@
 }
 .content .inform-group .active .table tr td:nth-child(1) li {
   margin: 0;
-  font-size: .14rem;
+  font-size: .16rem;
   line-height: .18rem;
   overflow: hidden;
   white-space: nowrap;
@@ -326,7 +326,7 @@
   letter-spacing: 1.2px;
 }
 .content .inform-group .active .table tr td:nth-child(1) li a {
-  font-size: .14rem;
+  font-size: .16rem;
   letter-spacing: 1.2px;
   color: black;
 }
@@ -390,7 +390,7 @@
   text-align: center;
 }
 .content .specialty .subjects .subjects h4 a {
-  font-size: .13rem;
+  font-size: .14rem;
   font-weight: bold;
   color: black;
 }
@@ -621,7 +621,7 @@
 .footer .footernav .row ul li a {
   text-align: center;
   color: white;
-  font-size: .14rem;
+  font-size: .16rem;
 }
 .footer .footernav .row ul li a:hover {
   text-decoration: none;
