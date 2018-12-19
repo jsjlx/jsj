@@ -153,7 +153,7 @@ window.onload = function() {
 // teacher swiper
 var swiper = new Swiper('.case', {
   slidesPerView: 4,
-  spaceBetween: 50,
+  spaceBetween: 25,
   // init: false,
   pagination: {
     el: '.swiper-pagination',

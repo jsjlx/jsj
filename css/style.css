@@ -39,6 +39,8 @@
 }
 .header .nav #cssmenu ul li {
   position: relative;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .header .nav #cssmenu ul li a {
   padding-left: 15px;
@@ -46,7 +48,11 @@
   color: white;
   font-size: 0.16rem;
 }
+.header .nav #cssmenu ul li a:hover {
+  color: #FFFF00;
+}
 .header .nav #cssmenu ul li li a:hover {
+  color: #FFFF00;
   background-color: #50baf3;
 }
 .swiper-container {
@@ -66,6 +72,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .swiper-container .text h2 a {
   font-size: .36rem;
@@ -189,7 +198,7 @@
   text-decoration: none;
 }
 .content .news .row1 .news:hover {
-  box-shadow: 0 0  7px 3px #999;
+  box-shadow: 0 0  3px 1px #999;
   cursor: pointer;
 }
 .content .inform-group {
@@ -246,6 +255,8 @@
   padding-left: .06rem;
   line-height: .16rem;
   font-size: .14rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 .content .inform-group .notice .table tr td:nth-child(1) li {
   margin: 0;
@@ -274,6 +285,8 @@
   font-size: .14rem;
   text-align: center;
   letter-spacing: 1.2px;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 .content .inform-group .active h3 {
   font-size: .24rem;
@@ -321,6 +334,8 @@
   padding-left: .06rem;
   line-height: .16rem;
   font-size: .14rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 .content .inform-group .active .table tr td:nth-child(1) li {
   margin: 0;
@@ -349,6 +364,8 @@
   font-size: .14rem;
   text-align: center;
   letter-spacing: 1.2px;
+  border: none;
+  border-bottom: 1px solid #ccc;
 }
 .content .specialty {
   margin-top: .9rem;
@@ -503,7 +520,7 @@
   text-decoration: none;
 }
 .content .cooperation .school .hr hr {
-  margin-bottom: 0;
+  margin-bottom: .20rem;
   margin-top: .15rem;
   background-color: #ccc;
 }
@@ -516,7 +533,7 @@
   text-decoration: none;
 }
 .content .cooperation .school .cooperation1 {
-  margin-bottom: .2rem;
+  margin-bottom: .1rem;
   transition: all .6s;
   margin-top: .09rem;
   border: 1px solid #ccc;
@@ -555,7 +572,7 @@
   text-decoration: none;
 }
 .content .cooperation .school .cooperation1:hover {
-  box-shadow: 0 0  7px 3px #999;
+  box-shadow: 0 0  3px 1px #999;
 }
 .content .cooperation .scenery h3 {
   font-size: .24rem;
@@ -576,7 +593,7 @@
   text-decoration: none;
 }
 .content .cooperation .scenery .hr hr {
-  margin-bottom: 0;
+  margin-bottom: .20rem;
   margin-top: .15rem;
   background-color: #ccc;
 }
@@ -825,7 +842,7 @@
 }
 #cssmenu > ul > li.has-sub > a::after {
   position: absolute;
-  top: 21px;
+  top: 23px;
   right: 10px;
   width: 4px;
   height: 4px;
@@ -844,7 +861,7 @@
   transition: border-color 0.2s ease;
 }
 #cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: #009ae1;
+  border-color: #FFFF00;
 }
 #cssmenu ul ul {
   position: absolute;

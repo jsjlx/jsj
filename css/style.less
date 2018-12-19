@@ -23,7 +23,7 @@
       text-align: center;
     }
     .nav{
-    background-color: #0081C6;
+      background-color: #0081C6;
       #cssmenu{
         margin: 0;
         padding: 0;
@@ -38,9 +38,11 @@
         box-sizing: border-box;
         ul{
           z-index: 999;
-          
           li{
             position: relative;
+            margin-left:0px;
+            margin-right:0px;
+
             a{
               // font-weight: bold;
               padding-left:15px;
@@ -49,9 +51,14 @@
               color: white;
               font-size: 0.16rem;
             }
+            a:hover{
+              color:#FFFF00;
+
+            }
             li{
               a:hover{
-    background-color: #50baf3;
+              color:#FFFF00;
+              background-color: #50baf3;
 
               }
             }
@@ -66,10 +73,12 @@
     // margin-top:20px;
     position: relative;
     .text{
-      position: absolute;
+    // opacity: 0.7;
+    position: absolute;
     z-index: 999;
     top: 40%;
     left: 20%;
+    // background-color: #fff;
     h2{
       width: 4rem;
       font-size: .36rem;
@@ -78,6 +87,9 @@
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      margin-top:10px;
+      margin-left:10px;
+      margin-right:10px;
       a{
         font-size: .36rem;
         color: white;
@@ -214,7 +226,7 @@
                      }
                     }
                     .news:hover{
-                        box-shadow:0 0  7px 3px #999;
+                        box-shadow:0 0  3px 1px #999;
                         cursor: pointer;
                     }
                 }
@@ -275,6 +287,8 @@
               padding-left:.06rem; 
               line-height:.16rem;
               font-size: .14rem;
+              border:none;
+              border-bottom:1px solid #ccc;
               li{
                 margin:0;
                 font-size: .14rem;
@@ -303,6 +317,8 @@
               font-size: .14rem;
               text-align: center;
               letter-spacing:1.2px;
+              border:none;
+              border-bottom:1px solid #ccc;
             }
           }
         }
@@ -362,6 +378,8 @@
                 padding-left:.06rem; 
                 line-height:.16rem;
                 font-size: .14rem;
+                border:none;
+              border-bottom:1px solid #ccc;
                 li{
                   margin:0;
                   font-size: .16rem;
@@ -390,6 +408,8 @@
                 font-size: .14rem;
                 text-align: center;
                 letter-spacing:1.2px;
+                border:none;
+              border-bottom:1px solid #ccc;
               }
             }
           }
@@ -578,7 +598,7 @@
             }
             .hr{
               hr{
-              margin-bottom:0;
+              margin-bottom:.20rem;
               margin-top:.15rem;
               background-color: #ccc;
                 }
@@ -593,7 +613,7 @@
               }
             }
             .cooperation1{
-              margin-bottom:.2rem;
+              margin-bottom:.1rem;
               transition:all .6s;
               :hover{
                 cursor: pointer;
@@ -632,7 +652,8 @@
               } 
             }
             .cooperation1:hover{
-              box-shadow:0 0  7px 3px #999;
+              box-shadow:0 0  3px 1px #999;
+              
             }
           }
 
@@ -658,7 +679,7 @@
               }
               .hr{
                 hr{
-                margin-bottom:0;
+                margin-bottom:.20rem;
                 margin-top:.15rem;
                 background-color: #ccc;
                   }
@@ -986,7 +1007,7 @@
 }
 #cssmenu > ul > li.has-sub > a::after {
   position: absolute;
-  top: 21px;
+  top: 23px;
   right: 10px;
   width: 4px;
   height: 4px;
@@ -1005,7 +1026,7 @@
   transition: border-color 0.2s ease;
 }
 #cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: #009ae1;
+  border-color:#FFFF00;
 }
 #cssmenu ul ul {
   position: absolute;
