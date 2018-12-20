@@ -103,10 +103,14 @@
 .swiper-container .text div p a:hover {
   text-decoration: none;
 }
+.content {
+  margin-top: .5rem;
+}
 .content .news {
-  margin-top: .4rem;
+  padding: 0;
 }
 .content .news h3 {
+  margin-left: -15px;
   font-size: .24rem;
   margin-bottom: .15rem;
 }
@@ -115,6 +119,9 @@
   font-size: .23rem;
   color: #0081C6;
 }
+.content .news h3 .gd a {
+  font-size: .16rem;
+}
 .content .news h3 a {
   font-size: .22rem;
   color: black;
@@ -122,22 +129,12 @@
 .content .news h3 a:hover {
   text-decoration: none;
 }
-.content .news .hr {
-  padding: 0;
-  margin-bottom: 0;
-}
-.content .news .hr hr {
-  margin-bottom: 0;
+.content .news hr {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 10px;
   margin-top: .15rem;
-  background-color: #ccc;
-}
-.content .news .hr a {
-  white-space: nowrap;
-  margin-top: 10px;
-  font-size: .13rem;
-}
-.content .news .hr a:hover {
-  text-decoration: none;
+  background-color: #0081C6;
 }
 .content .news .row1 {
   padding-left: 15px;
@@ -148,6 +145,7 @@
   height: auto;
   transition: all .6s;
   border: 1px solid #ccc;
+  margin-top: .2rem;
 }
 .content .news .row1 .news .u-img {
   padding-left: 0;
@@ -202,10 +200,10 @@
   cursor: pointer;
 }
 .content .inform-group {
-  margin-top: 65px;
+  margin-top: .5rem;
 }
 .content .inform-group .notice {
-  margin-bottom: .2rem;
+  margin-bottom: .3rem;
 }
 .content .inform-group .notice h3 {
   font-size: .24rem;
@@ -224,12 +222,13 @@
   text-decoration: none;
 }
 .content .inform-group .notice .hr hr {
+  border-top: none;
   margin-bottom: 0;
-  margin-top: .15rem;
-  background-color: #ccc;
+  margin-top: 0;
+  background-color: #0081C6;
 }
 .content .inform-group .notice .hr a {
-  margin-top: 10px;
+  color: #ccc;
   font-size: .13rem;
   white-space: nowrap;
 }
@@ -237,9 +236,10 @@
   text-decoration: none;
 }
 .content .inform-group .notice .table {
-  margin-left: 8px;
+  margin-left: 0px;
   margin-bottom: 0;
-  margin-top: .2rem;
+  padding-left: 0;
+  margin-top: 20px;
 }
 .content .inform-group .notice .table tr {
   transition: all .8s;
@@ -294,7 +294,7 @@
 }
 .content .inform-group .active h3 span {
   font-size: .23rem;
-  color: #3aaadc;
+  color: #0081C6;
 }
 .content .inform-group .active h3 a {
   font-size: .22rem;
@@ -304,21 +304,22 @@
   text-decoration: none;
 }
 .content .inform-group .active .hr hr {
+  border-top: none;
   margin-bottom: 0;
-  margin-top: .15rem;
-  background-color: #ccc;
+  margin-top: 0;
+  background-color: #0081C6;
 }
 .content .inform-group .active .hr a {
-  margin-top: 10px;
   font-size: .13rem;
   white-space: nowrap;
+  color: #ccc;
 }
 .content .inform-group .active .hr a:hover {
   text-decoration: none;
 }
 .content .inform-group .active .table {
   margin-bottom: 0;
-  margin-top: .2rem;
+  margin-top: 20px;
 }
 .content .inform-group .active .table tr {
   transition: all .8s;
@@ -507,7 +508,7 @@
 }
 .content .cooperation .school h3 span {
   font-size: .32rem;
-  color: #3aaadc;
+  color: #0081C6;
 }
 .content .cooperation .school h3 a {
   color: black;
@@ -520,12 +521,13 @@
   text-decoration: none;
 }
 .content .cooperation .school .hr hr {
-  margin-bottom: .20rem;
-  margin-top: .15rem;
-  background-color: #ccc;
+  border-top: none;
+  margin-bottom: 10px;
+  margin-top: 0;
+  background-color: #0081C6;
 }
 .content .cooperation .school .hr a {
-  margin-top: 10px;
+  color: #ccc;
   font-size: .13rem;
   white-space: nowrap;
 }
@@ -533,8 +535,9 @@
   text-decoration: none;
 }
 .content .cooperation .school .cooperation1 {
-  margin-bottom: .1rem;
+  margin-bottom: 10px;
   transition: all .6s;
+  margin-top: .15rem;
   margin-top: .09rem;
   border: 1px solid #ccc;
 }
@@ -555,7 +558,7 @@
 }
 .content .cooperation .school .cooperation1 p .icon {
   font-weight: bold;
-  color: #3aaadc;
+  color: #0081C6;
 }
 .content .cooperation .school .cooperation1 p span {
   line-height: .16rem;
@@ -574,13 +577,16 @@
 .content .cooperation .school .cooperation1:hover {
   box-shadow: 0 0  3px 1px #999;
 }
+.content .cooperation .scenery {
+  margin-bottom: .15rem;
+}
 .content .cooperation .scenery h3 {
   font-size: .24rem;
   margin-bottom: .15rem;
 }
 .content .cooperation .scenery h3 span {
   font-size: .32rem;
-  color: #3aaadc;
+  color: #0081C6;
 }
 .content .cooperation .scenery h3 a {
   color: black;
@@ -593,9 +599,10 @@
   text-decoration: none;
 }
 .content .cooperation .scenery .hr hr {
-  margin-bottom: .20rem;
-  margin-top: .15rem;
-  background-color: #ccc;
+  border-top: none;
+  margin-bottom: 10px;
+  margin-top: 0;
+  background-color: #0081C6;
 }
 .content .cooperation .scenery .hr a {
   margin-top: 10px;
@@ -606,7 +613,7 @@
   text-decoration: none;
 }
 .content .cooperation .scenery .video {
-  margin-top: .1rem;
+  margin-top: .15rem;
 }
 .content .cooperation .scenery .video video {
   padding: 0;

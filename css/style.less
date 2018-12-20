@@ -4,6 +4,9 @@
     font-family: '微软雅黑';
     line-height: 0;
   }
+  @color-hr:#0081C6;
+  @color-icon:#0081C6;
+  @color-gd:#ccc;
 //字体大小边距重置
   @media screen and (max-width: 1200px) {
     * {
@@ -124,19 +127,24 @@
  
  //content Start
   .content{
-    // height: 5000px;
-    // overflow: hidden;
-      // background-color: ;
+      margin-top:.5rem;
       .news{
-          margin-top:.4rem;
+          padding:0;
           // background-color:#ccc;
             h3{
+                margin-left:-15px;
+              // margin-right:-15px;
                 font-size: .24rem;
                 margin-bottom:.15rem;
                 span{
                     margin-right:10px;
                     font-size:.23rem;
-                    color:#0081C6;
+                    color:@color-icon;
+                }
+                .gd{
+                  a{
+                    font-size: .16rem;
+                  }
                 }
                 a{
                   font-size: .22rem;
@@ -146,33 +154,35 @@
                   text-decoration: none;
                 }
                 }
-            .hr{ 
-                padding:0;
-                 margin-bottom:0;
+                // padding:0;
+                //  margin-bottom:10px;
                 hr{
-                margin-bottom:0;
+                margin-left:-15px;
+                margin-right:-15px;
+                margin-bottom:10px;
                 margin-top:.15rem;
-                background-color: #ccc;
+                background-color:@color-hr;
+
                  }                
-                a{
-                    white-space: nowrap;
-                    margin-top:10px;
-                    font-size:.13rem;
-                    // margin-left:20px;            
-                }
-                a:hover{
-                    text-decoration: none;
-                }
-                } 
+                // a{
+                //     white-space: nowrap;
+                //     margin-top:10px;
+                //     font-size:.13rem;
+                //     // margin-left:20px;            
+                // }
+                // a:hover{
+                //     text-decoration: none;
+                // }
+
             .row1{
               padding-left: 15px;
-              // background-color: red;
                 .news{
                     padding-left: 0px;
                     background-color:#ffffff;
-                     height:auto;
-                     transition: all .6s;
-                     border:1px solid #ccc;
+                    height:auto;
+                    transition: all .6s;
+                    border:1px solid #ccc;
+                    margin-top:.2rem;
                      .u-img{
                          padding-left:0;
                          height: 100%;
@@ -234,16 +244,16 @@
       }
       .inform-group{
 
-        margin-top:65px;
+        margin-top:.5rem;
         .notice{
-          margin-bottom:.2rem;
+          margin-bottom:.3rem;
           h3{
             font-size: .24rem;
             margin-bottom:.15rem;
             span{
               margin-right:10px;
               font-size:.23rem;
-              color:#0081C6;
+              color:@color-icon;
           }
           a{
             font-size: .22rem;
@@ -255,12 +265,13 @@
           }
           .hr{
             hr{
+            border-top:none;
             margin-bottom:0;
-            margin-top:.15rem;
-            background-color: #ccc;
+            margin-top:0;
+            background-color: @color-hr;
           }
           a{
-            margin-top:10px;
+            color:@color-gd;
             font-size:.13rem;
             white-space: nowrap;
             // margin-left:20px;            
@@ -270,10 +281,11 @@
         }
         }
         .table{
-          margin-left: 8px;
+          margin-left: 0px;
           margin-bottom:0;
+          padding-left:0;
           // background-color: white;
-          margin-top:.2rem;
+          margin-top:20px;
           tr{
             transition: all .8s;
             :hover{
@@ -332,7 +344,7 @@
               margin-bottom:.15rem;
               span{
                 font-size: .23rem;
-                color:#3aaadc;
+                color:@color-icon;
               }
               a{
                 font-size: .22rem;
@@ -344,16 +356,18 @@
             }
             .hr{
               hr{
+            border-top:none;
+
               margin-bottom:0;
-              margin-top:.15rem;
-              background-color: #ccc;
+              margin-top:0;
+              background-color: @color-hr;
             }
             a{
-              // padding:0;
-              margin-top:10px;
+
               font-size:.13rem;
               white-space: nowrap;
-              // margin-left:20px;            
+              color:@color-gd;
+     
           }
           a:hover{
               text-decoration: none;
@@ -364,7 +378,7 @@
 
             // background-color: white;
             margin-bottom:0;
-            margin-top:.2rem;
+            margin-top:20px;
             tr{
               transition: all .8s;
               :hover{
@@ -416,9 +430,6 @@
           
           }
       
-        
-
-
       }
 
       .specialty{
@@ -432,7 +443,7 @@
             font-size: .75rem;
             margin: 0 ;
             margin-top:.2rem;
-            color:#0081C6;
+            color:@color-icon;
           }
           h3 {
           margin:.2rem;
@@ -527,7 +538,7 @@
               margin: 0 ;
               margin-bottom:1px;
               margin-top:.2rem;
-              color:#0081C6;
+              color:@color-icon;
             }
             h3 {
             margin:.2rem;
@@ -583,7 +594,7 @@
               margin-bottom:.15rem;
               span{
                 font-size: .32rem;
-                color:#3aaadc;
+                color:@color-icon;
               }
               a{
                 color:black;
@@ -598,12 +609,13 @@
             }
             .hr{
               hr{
-              margin-bottom:.20rem;
-              margin-top:.15rem;
-              background-color: #ccc;
+              border-top:none;
+              margin-bottom:10px;
+              margin-top:0;
+              background-color: @color-hr;
                 }
               a{
-                margin-top:10px;
+                color:@color-gd;
                 font-size:.13rem;
                 white-space: nowrap;
                 // margin-left:20px;            
@@ -613,8 +625,9 @@
               }
             }
             .cooperation1{
-              margin-bottom:.1rem;
+              margin-bottom:10px;
               transition:all .6s;
+              margin-top:.15rem;
               :hover{
                 cursor: pointer;
               }
@@ -633,7 +646,7 @@
                 }
                 .icon{
                   font-weight: bold;
-                  color:#3aaadc;
+                  color:@color-icon;
                 }
                 span{
                   line-height: .16rem;
@@ -658,13 +671,14 @@
           }
 
           .scenery{
+            margin-bottom:.15rem;
             // margin-top:.08rem;
               h3{
                 font-size: .24rem;
                 margin-bottom:.15rem;
                 span{
                   font-size: .32rem;
-                  color:#3aaadc;
+                  color:@color-icon;
                 }
                 a{
                   color:black;
@@ -679,9 +693,10 @@
               }
               .hr{
                 hr{
-                margin-bottom:.20rem;
-                margin-top:.15rem;
-                background-color: #ccc;
+                border-top:none;
+                margin-bottom:10px;
+                margin-top:0;
+                background-color: @color-hr;
                   }
                 a{
                   margin-top:10px;
@@ -695,7 +710,7 @@
                }
 
                .video{
-                 margin-top:.1rem;
+                 margin-top:.15rem;
                  video{
                    padding:0;
 
