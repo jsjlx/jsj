@@ -177,8 +177,7 @@
   margin-bottom: 0;
   display: block;
   width: 100%;
-  height: auto;
-  line-height: 20px;
+  line-height: .2rem;
   position: relative;
   top: 20%;
   font-size: .12rem;
@@ -208,6 +207,7 @@
 .content .inform-group .notice h3 {
   font-size: .24rem;
   margin-bottom: .15rem;
+  padding-left: 0;
 }
 .content .inform-group .notice h3 span {
   margin-right: 10px;
@@ -291,6 +291,7 @@
 .content .inform-group .active h3 {
   font-size: .24rem;
   margin-bottom: .15rem;
+  padding-left: 0;
 }
 .content .inform-group .active h3 span {
   font-size: .23rem;
@@ -369,7 +370,7 @@
   border-bottom: 1px solid #ccc;
 }
 .content .specialty {
-  margin-top: .9rem;
+  margin-top: .5rem;
 }
 .content .specialty .title li {
   list-style: none;
@@ -382,7 +383,8 @@
   color: #0081C6;
 }
 .content .specialty .title li h3 {
-  margin: .2rem;
+  margin-top: .2rem;
+  margin-bottom: 0;
   font-size: .36rem;
 }
 .content .specialty .title li h3 a {
@@ -394,11 +396,11 @@
   text-decoration: none;
 }
 .content .specialty .subjects {
-  margin-top: .5rem;
+  margin-top: .0rem;
 }
 .content .specialty .subjects .subjects {
   background-color: #fff;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   border-radius: 1%;
   transition: all .6s;
   padding: -20px -20px;
@@ -435,7 +437,7 @@
 }
 .content .specialty .subjects .subjects p a {
   font-size: .13rem;
-  color: black;
+  color: #524e4e;
 }
 .content .specialty .subjects .subjects p a:hover {
   text-decoration: none;
@@ -445,7 +447,7 @@
   padding-bottom: .08rem;
 }
 .content .teacher {
-  margin-top: .9rem;
+  margin-top: .5rem;
 }
 .content .teacher .title li {
   list-style: none;
@@ -459,7 +461,8 @@
   color: #0081C6;
 }
 .content .teacher .title li h3 {
-  margin: .2rem;
+  margin-top: .2rem;
+  margin-bottom: 0;
   font-size: .36rem;
   margin-top: .4rem;
 }
@@ -473,6 +476,7 @@
   text-decoration: none;
 }
 .content .teacher .case {
+  margin-top: .2rem;
   width: 100%;
 }
 .content .teacher .case .swiper-slide {
@@ -505,6 +509,7 @@
 .content .cooperation .school h3 {
   font-size: .24rem;
   margin-bottom: .15rem;
+  padding-left: 0;
 }
 .content .cooperation .school h3 span {
   font-size: .32rem;
@@ -583,6 +588,7 @@
 .content .cooperation .scenery h3 {
   font-size: .24rem;
   margin-bottom: .15rem;
+  padding-left: 0;
 }
 .content .cooperation .scenery h3 span {
   font-size: .32rem;
