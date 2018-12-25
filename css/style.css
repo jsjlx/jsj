@@ -6,7 +6,7 @@
 }
 @media screen and (max-width: 1200px) {
   * {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -136,25 +136,22 @@
   margin-top: .15rem;
   background-color: #0081C6;
 }
-.content .news .row1 {
-  padding-left: 15px;
-}
 .content .news .row1 .news {
-  padding-left: 0px;
   background-color: #ffffff;
-  height: auto;
-  transition: all .6s;
-  border: 1px solid #ccc;
   margin-top: .2rem;
+  padding: .01rem .05rem;
 }
 .content .news .row1 .news .u-img {
   padding-left: 0;
   height: 100%;
   padding-right: 0;
+  transition: all .6s;
 }
 .content .news .row1 .news .title {
   padding: 0;
   padding-left: .08rem;
+  border: 1px solid #ccc;
+  transition: all .6s;
 }
 .content .news .row1 .news .title h4 {
   position: relative;
@@ -194,183 +191,85 @@
 .content .news .row1 .news .title p a:hover {
   text-decoration: none;
 }
-.content .news .row1 .news:hover {
+.content .news .row1 .news:hover .title {
   box-shadow: 0 0  3px 1px #999;
   cursor: pointer;
 }
 .content .inform-group {
   margin-top: .5rem;
 }
-.content .inform-group .notice {
+.content .inform-group .inform {
   margin-bottom: .3rem;
 }
-.content .inform-group .notice h3 {
+.content .inform-group .inform h3 {
   font-size: .24rem;
   margin-bottom: .15rem;
   padding-left: 0;
 }
-.content .inform-group .notice h3 span {
+.content .inform-group .inform h3 span {
   margin-right: 10px;
   font-size: .23rem;
   color: #0081C6;
 }
-.content .inform-group .notice h3 a {
+.content .inform-group .inform h3 a {
   font-size: .22rem;
   color: black;
 }
-.content .inform-group .notice h3 a:hover {
+.content .inform-group .inform h3 a:hover {
   text-decoration: none;
 }
-.content .inform-group .notice .hr hr {
-  border-top: none;
+.content .inform-group .inform .hr hr {
+  border: none;
   margin-bottom: 0;
   margin-top: 0;
   background-color: #0081C6;
 }
-.content .inform-group .notice .hr a {
+.content .inform-group .inform .hr a {
   color: #ccc;
   font-size: .13rem;
   white-space: nowrap;
+  margin-right: -15px;
 }
-.content .inform-group .notice .hr a:hover {
+.content .inform-group .inform .hr a:hover {
   text-decoration: none;
 }
-.content .inform-group .notice .table {
-  margin-left: 0px;
-  margin-bottom: 0;
-  padding-left: 0;
+.content .inform-group .inform ul {
+  margin: 0;
   margin-top: 20px;
-}
-.content .inform-group .notice .table tr {
-  transition: all .8s;
-}
-.content .inform-group .notice .table tr :hover {
-  cursor: pointer;
-}
-.content .inform-group .notice .table tr td:nth-child(1) {
-  margin: 0;
   padding: 0;
-  padding-top: .1rem;
-  padding-bottom: .12rem;
-  padding-left: .06rem;
-  line-height: .16rem;
-  font-size: .14rem;
-  border: none;
-  border-bottom: 1px solid #ccc;
 }
-.content .inform-group .notice .table tr td:nth-child(1) li {
-  margin: 0;
-  font-size: .14rem;
-  line-height: .18rem;
+.content .inform-group .inform ul li {
+  padding-left: 0;
+  font-size: .16rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  letter-spacing: 1.2px;
 }
-.content .inform-group .notice .table tr td:nth-child(1) li a {
-  font-size: .16rem;
-  letter-spacing: 1.2px;
-  color: black;
-}
-.content .inform-group .notice .table tr td:nth-child(1) li a:hover {
-  text-decoration: none;
-}
-.content .inform-group .notice .table tr td:nth-child(2) {
-  margin: 0;
-  padding: 0;
-  padding-top: .1rem;
-  padding-bottom: .1rem;
-  padding-left: .06rem;
-  line-height: .16rem;
-  font-size: .14rem;
-  text-align: center;
-  letter-spacing: 1.2px;
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-.content .inform-group .active h3 {
-  font-size: .24rem;
-  margin-bottom: .15rem;
-  padding-left: 0;
-}
-.content .inform-group .active h3 span {
-  font-size: .23rem;
-  color: #0081C6;
-}
-.content .inform-group .active h3 a {
-  font-size: .22rem;
-  color: black;
-}
-.content .inform-group .active h3 a:hover {
-  text-decoration: none;
-}
-.content .inform-group .active .hr hr {
-  border-top: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  background-color: #0081C6;
-}
-.content .inform-group .active .hr a {
-  font-size: .13rem;
-  white-space: nowrap;
-  color: #ccc;
-}
-.content .inform-group .active .hr a:hover {
-  text-decoration: none;
-}
-.content .inform-group .active .table {
-  margin-bottom: 0;
-  margin-top: 20px;
-}
-.content .inform-group .active .table tr {
-  transition: all .8s;
-}
-.content .inform-group .active .table tr :hover {
+.content .inform-group .inform ul li :hover {
   cursor: pointer;
 }
-.content .inform-group .active .table tr td:nth-child(1) {
-  margin: 0;
-  padding: 0;
-  padding-top: .1rem;
-  padding-bottom: .12rem;
-  padding-left: .06rem;
-  line-height: .16rem;
-  font-size: .14rem;
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-.content .inform-group .active .table tr td:nth-child(1) li {
-  margin: 0;
+.content .inform-group .inform ul li a {
   font-size: .16rem;
   line-height: .18rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  letter-spacing: 1.2px;
-}
-.content .inform-group .active .table tr td:nth-child(1) li a {
-  font-size: .16rem;
-  letter-spacing: 1.2px;
   color: black;
 }
-.content .inform-group .active .table tr td:nth-child(1) li a:hover {
+.content .inform-group .inform ul li a span {
+  font-size: .16rem;
+}
+.content .inform-group .inform ul li a:hover {
   text-decoration: none;
 }
-.content .inform-group .active .table tr td:nth-child(2) {
-  margin: 0;
-  padding: 0;
-  padding-top: .1rem;
-  padding-bottom: .1rem;
-  padding-left: .06rem;
-  line-height: .16rem;
-  font-size: .14rem;
-  text-align: center;
-  letter-spacing: 1.2px;
-  border: none;
-  border-bottom: 1px solid #ccc;
+.content .inform-group .inform ul li:nth-child(2) {
+  color: black;
+  font-size: .16rem;
+  line-height: .18rem;
+  text-align: right;
 }
 .content .specialty {
-  margin-top: .5rem;
+  margin-top: .6rem;
+}
+.content .specialty .title {
+  margin-bottom: .2rem;
 }
 .content .specialty .title li {
   list-style: none;
@@ -395,9 +294,6 @@
 .content .specialty .title li h3 a:hover {
   text-decoration: none;
 }
-.content .specialty .subjects {
-  margin-top: .0rem;
-}
 .content .specialty .subjects .subjects {
   background-color: #fff;
   margin-top: 0.2rem;
@@ -407,6 +303,7 @@
 }
 .content .specialty .subjects .subjects h4 {
   font-size: .13rem;
+  margin-top: .05rem;
   margin-bottom: .08rem;
   text-align: center;
 }
@@ -445,9 +342,33 @@
 .content .specialty .subjects .subjects .u-img {
   margin-top: .10rem;
   padding-bottom: .08rem;
+  position: relative;
+}
+.content .specialty .subjects .subjects .u-img p {
+  position: absolute;
+  opacity: 0;
+  transition: all .8s;
+  margin: 0;
+  bottom: 4%;
+  background-color: #2C2011;
+  width: 100%;
+  padding-left: .05rem;
+  padding-right: .05rem;
+}
+.content .specialty .subjects .subjects .u-img p a {
+  font-size: .12rem;
+  opacity: 1;
+  margin: 0;
+  color: white;
+}
+.content .specialty .subjects .subjects .u-img:hover p {
+  opacity: 1;
 }
 .content .teacher {
-  margin-top: .5rem;
+  margin-top: .7rem;
+}
+.content .teacher .title {
+  margin-bottom: .4rem;
 }
 .content .teacher .title li {
   list-style: none;
@@ -484,7 +405,6 @@
   font-size: 18px;
   background: #fff;
   height: auto;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -518,11 +438,8 @@
 .content .cooperation .school h3 a {
   color: black;
   font-size: .24rem;
-  transition: all .3s;
 }
 .content .cooperation .school h3 a:hover {
-  font-size: .25rem;
-  opacity: .7;
   text-decoration: none;
 }
 .content .cooperation .school .hr hr {
@@ -551,8 +468,9 @@
 }
 .content .cooperation .school .cooperation1 h4 {
   font-size: .18rem;
-  font-weight: bold;
+  font-weight: 500;
   margin: .1rem 0 0 .1rem;
+  color: #0081C6;
 }
 .content .cooperation .school .cooperation1 p {
   line-height: .16rem;
@@ -568,16 +486,50 @@
 .content .cooperation .school .cooperation1 p span {
   line-height: .16rem;
   font-size: .14rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .content .cooperation .school .cooperation1 p span a {
+  opacity: 0.5;
+  color: #333;
   font-size: .14rem;
   white-space: nowrap;
 }
 .content .cooperation .school .cooperation1 p span a:hover {
   text-decoration: none;
+}
+.content .cooperation .school .cooperation1 p span:nth-child(1) {
+  line-height: .16rem;
+  font-size: .14rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content .cooperation .school .cooperation1 p span:nth-child(1) a {
+  opacity: 0.5;
+  color: #333;
+  font-size: .14rem;
+  white-space: nowrap;
+}
+.content .cooperation .school .cooperation1 p span:nth-child(1) a:hover {
+  text-decoration: none;
+}
+.content .cooperation .school .cooperation1 p span:nth-child(2) {
+  line-height: .16rem;
+  font-size: .14rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.content .cooperation .school .cooperation1 p span:nth-child(2) a {
+  opacity: 0.5;
+  color: #333;
+  font-size: .14rem;
+  white-space: nowrap;
+}
+.content .cooperation .school .cooperation1 p span:nth-child(2) a:hover {
+  text-decoration: none;
+}
+.content .cooperation .school .cooperation2 {
+  margin-bottom: 40px;
 }
 .content .cooperation .school .cooperation1:hover {
   box-shadow: 0 0  3px 1px #999;
@@ -597,11 +549,8 @@
 .content .cooperation .scenery h3 a {
   color: black;
   font-size: .24rem;
-  transition: all .3s;
 }
 .content .cooperation .scenery h3 a:hover {
-  font-size: .25rem;
-  opacity: .7;
   text-decoration: none;
 }
 .content .cooperation .scenery .hr hr {
@@ -626,13 +575,13 @@
 }
 .footer {
   margin-top: 90px;
-  background-color: #e1e0e0;
 }
 .footer .footernav .row {
   background-color: #CBCCCC;
 }
 .footer .footernav .row ul {
-  margin-bottom: .27rem;
+  margin-top: .20rem;
+  margin-bottom: .30rem;
   padding-left: 0;
   padding-right: 0;
 }
@@ -646,11 +595,18 @@
 }
 .footer .footernav .row ul li a {
   text-align: center;
-  color: white;
+  color: #545454;
   font-size: .16rem;
 }
 .footer .footernav .row ul li a:hover {
   text-decoration: none;
+}
+.footer .footernav .row ul li:first-child {
+  margin-bottom: .17rem;
+}
+.footer .footernav .row ul li:first-child a {
+  color: black;
+  font-weight: 500;
 }
 .footer .foot {
   padding-bottom: .2rem;
@@ -682,54 +638,124 @@
   margin-top: 0;
 }
 .catalog {
-  background-color: #ccc;
   margin-top: 40px;
 }
 .catalog .catalog-left {
   padding: 0;
   margin-top: .2rem;
-  background-color: #999;
-}
-.catalog .catalog-left span:nth-child(1) {
-  text-align: center;
-  background-color: white;
-}
-.catalog .catalog-left span:nth-child(1) a {
-  font-size: .2rem;
+  border: 1px solid #ccc;
 }
 .catalog .catalog-left span {
+  border-bottom: none;
+  border-top: none;
   text-align: center;
   padding: .10rem;
   display: block;
-  background-color: #666;
+  background-color: #ccc;
 }
 .catalog .catalog-left span a {
   display: block;
   line-height: .18rem;
   font-size: .16rem;
-  color: black;
+  color: white;
 }
 .catalog .catalog-left span a:hover {
   text-decoration: none;
+  color: black;
+}
+.catalog .catalog-left span:nth-child(1) {
+  text-align: center;
+  background-color: #0081C6;
+  padding: .20rem;
+}
+.catalog .catalog-left span:nth-child(1) a {
+  font-size: .2rem;
 }
 .catalog .catalog-left span:hover {
-  background-color: red;
+  background-color: white;
   cursor: pointer;
+  color: black;
 }
 .catalog .catalog-right {
-  height: 200px;
-  background-color: red;
+  border: 1px solid #ccc;
   margin-top: .2rem;
 }
-.catalog .catalog-right .src p {
-  margin: 0;
+.catalog .catalog-right .src {
+  margin-top: .1rem;
 }
-.catalog .catalog-right .src p span {
-  font-size: .16rem;
+.catalog .catalog-right .src ol {
+  padding: .1rem .1rem;
+  margin-bottom: .20rem;
+  border-radius: .1rem;
 }
-.catalog .catalog-right .src p a {
+.catalog .catalog-right .src ol li + li::before {
+  padding-left: .1rem;
+  padding-right: .1rem;
+}
+.catalog .catalog-right .src ol li {
   font-size: .16rem;
+  line-height: .18rem;
+}
+.catalog .catalog-right .src ol li a {
+  font-size: .16rem;
+  line-height: .18rem;
+}
+.catalog .catalog-right .src ol li a:hover {
+  text-decoration: none;
+}
+.catalog .catalog-right .working {
+  padding-left: .5rem;
+  margin-bottom: .5rem;
+}
+.catalog .catalog-right .working ol {
+  margin-top: .2rem;
+  margin-bottom: 0;
+  padding: 0;
+  padding-right: 10px;
+}
+.catalog .catalog-right .working ol li {
+  font-size: .16rem;
+  margin-bottom: .15rem;
+}
+.catalog .catalog-right .working ol li a {
+  margin-left: .05rem;
   color: black;
+  display: block;
+  font-size: .16rem;
+  line-height: .18rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.catalog .catalog-right .working ol li a:hover {
+  text-decoration: none;
+  color: #0081C6;
+}
+.catalog .catalog-right .page {
+  margin: auto;
+  margin-bottom: .4rem;
+  padding-left: 20px;
+}
+.catalog .catalog-right .page ul {
+  margin-bottom: 0;
+}
+.catalog .catalog-right .page ul li .last {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.catalog .catalog-right .page ul li .next {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.catalog .catalog-right .page ul li a {
+  padding: .1rem .2rem;
+  font-size: .18rem;
+}
+.catalog .catalog-right .page ul li a span {
+  font-size: .18rem;
+}
+.catalog .catalog-right .page ul li a:active {
+  display: none;
 }
 .main {
   margin-top: 40px;
@@ -737,17 +763,24 @@
   border: 1px solid #ccc;
   padding-bottom: .6rem;
 }
-.main .src p {
+.main .src ol {
+  padding: .1rem .1rem;
+  margin-bottom: .20rem;
+  border-radius: .1rem;
+}
+.main .src ol li + li::before {
+  padding-left: .1rem;
+  padding-right: .1rem;
+}
+.main .src ol li {
+  font-size: .16rem;
   line-height: .18rem;
 }
-.main .src p span {
+.main .src ol li a {
   font-size: .16rem;
+  line-height: .18rem;
 }
-.main .src p a {
-  font-size: .16rem;
-  color: black;
-}
-.main .src p a:hover {
+.main .src ol li a:hover {
   text-decoration: none;
 }
 .main h2 {

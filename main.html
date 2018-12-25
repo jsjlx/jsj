@@ -15,77 +15,61 @@
     <!-- 导航栏css -->
     <link rel="stylesheet" href="./font/iconfont.css">
     <!-- 阿里的icon -->
+    <link rel="stylesheet" href="./css/animate.css">
 
 
 </head>
 
 <body>
     <div class="header">
-        <img class="img-fluid" src="./images/header.png">
-        <div class="container-fluid">
-            <div id="delete" class="container">
+        <div class="container-fluid logo">
+            <img class="img-fluid" src="./images/header.png">
+        </div>
 
+        <div class="container-fluid nav">
+            <div id="delete" class="container">
                 <div id='cssmenu'>
                     <ul>
-                        <li><a href='#'>经贸首页</a></li>
-                        <li><a href='#'>学院首页</a></li>
-                        <li class='active has-sub has-sub-b'><a href='#'>&nbsp;学院概况</a>
+                        <li><a href='http://www.hnjmxy.cn/' v-text="nav1"></a></li>
+                        <li><a href='./index.html' v-text="nav2"></a></li>
+                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav3"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>学院介绍</a></li>
-                                <li class='has-sub'><a href='#'>学院领导</a></li>
-                                <li class='has-sub'><a href='#'>机构设置</a></li>
-
+                                <li class='has-sub' v-for="site in site03" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#'>师资队伍</a>
+                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav4"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>教研室</a></li>
-                                <li class='has-sub'><a href='#'>教学团队</a></li>
+                                <li class='has-sub' v-for="site in site04" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active'><a href='#'>专业介绍</a></li>
-                        <li class='active has-sub has-sub-b'><a href='#'>教学科研</a>
+                        <li class='active'><a href='#' v-text="nav5"></a></li>
+                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav6"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>教学成果</a></li>
-                                <li class='has-sub'><a href='#'>科研服务</a></li>
-                                <li class='has-sub'><a href='#'>技能竞赛</a></li>
-                                <li class='has-sub'><a href='#'>15年竞赛月</a></li>
+                                <li class='has-sub' v-for="site in site06" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#'>党建工作</a>
+                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav7"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>理论学习</a></li>
-                                <li class='has-sub'><a href='#'>党务指导</a></li>
-                                <li class='has-sub'><a href='#'>支部动态</a></li>
+                                <li class='has-sub' v-for="site in site07" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#'>学团工作</a>
+                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav8"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>队伍建设</a></li>
-                                <li class='has-sub'><a href='#'>学风建设</a></li>
-                                <li class='has-sub'><a href='#'>社团活动</a></li>
-                                <li class='has-sub'><a href='#'>学生风采</a></li>
-                                <li class='has-sub'><a href='#'>学生资助</a></li>
+                                <li class='has-sub' v-for="site in site08" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#'>就业与创业</a>
+                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav9"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>创业指导</a></li>
-                                <li class='has-sub'><a href='#'>就业指导</a></li>
-                                <li class='has-sub'><a href='#'>招聘信息</a></li>
-                                <li class='has-sub'><a href='#'>优秀毕业生</a></li>
+                                <li class='has-sub' v-for="site in site09" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#'>校企合作</a>
+                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav10"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>企业简介</a></li>
-                                <li class='has-sub'><a href='#'>合作交流</a></li>
-                                <li class='has-sub'><a href='#'>学院概况</a></li>
-                                <li class='has-sub'><a href='#'>学院概况</a></li>
+                                <li class='has-sub' v-for="site in site10" v-html="site.url"></li>
                             </ul>
                         </li>
 
-                        <li><a href='#'>专业介绍</a></li>
+                        <li><a href='#' v-text="nav11"></a></li>
 
                     </ul>
                 </div>
@@ -95,39 +79,18 @@
     <!-- navEND-->
 
     <!-- main Start -->
-    <div class="main container">
-        <div class="src col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-            <p>
-                <span>当前位置：</span>
-                <a href="#">首页></a>
-                <a href="#">学院概况></a>
-                <a href="#">新闻标题</a>
-            </p>
+    <div class="main container" id="main">
+        <div class="src col-12">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">首页</a></li>
+                <li class="breadcrumb-item"><a href="./catalog.html">学院概况</a></li>
+                <li class="breadcrumb-item active" v-text="title">Data</li>
+              </ol>
         </div>
-        <h2 class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">这里是新闻的标题</h2>
-        <hr class="container col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
-        <p class="container col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12">   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-        </p>
-        <div class="u-img col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12 ">
-                <img src="./images/main1.jpg" class="img-fluid" alt="">
-        </div>
-        
-        <p class="container col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-              
-                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.  
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.
-        </p>
-        <div class="u-img col-xl-10 col-lg-10 col-md-10 col-sm-11 col-12">
-                <img src="./images/main1.jpg" class="img-fluid" alt="">
-        </div>
+        <h2 class="container col-12" v-text="title"></h2>
+        <hr class="container col-10" >
+        <p class="container col-md-10 col-sm-11 col-12 animated fadeInRightBig" v-html="contenttop" ></p>
+        <p class="container col-md-10 col-sm-11 col-12 animated fadeInLeftBig" v-html="contentbottom"></p>
 
     </div>
     <!-- main ENd -->
@@ -155,83 +118,67 @@
 
 
 <!-- footer Start -->
-    <div class="footer footer1 container-fluid ">
-        <div class="footernav container d-none d-md-block ">
-            <div class="row justify-content-between">
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">经贸首页</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">学院首页</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">学院概况</a></li>
-                    <li><a href="">学院介绍</a></li>
-                    <li><a href="">学院领导</a></li>
-                    <li><a href="">机构设置</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">师资队伍</a></li>
-                    <li><a href="">教研室</a></li>
-                    <li><a href="">教学团队</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">教学科研</a></li>
-                    <li><a href="">教学成果</a></li>
-                    <li><a href="">科研服务</a></li>
-                    <li><a href="">技能竞赛</a></li>
-                    <li><a href="">15年竞赛月</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">党建工作</a></li>
-                    <li><a href="">理论学习</a></li>
-                    <li><a href="">党务指导</a></li>
-                    <li><a href="">支部动态</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">学团工作</a></li>
-                    <li><a href="">队伍建设</a></li>
-                    <li><a href="">学风建设</a></li>
-                    <li><a href="">社团活动</a></li>
-                    <li><a href="">学生风采</a></li>
-                    <li><a href="">学生资助</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">就业创业</a></li>
-                    <li><a href="">创业指导</a></li>
-                    <li><a href="">就业指导</a></li>
-                    <li><a href="">招聘信息</a></li>
-                    <li><a href="">优秀毕业生</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">校企合作</a></li>
-                    <li><a href="">企业简介</a></li>
-                    <li><a href="">合作交流</a></li>
-                </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
-                    <li><a href="">专业介绍</a></li>
-                </ul>
-            </div>
+<div class="footer footer1 container-fluid ">
+    <div id="footernav" class="footernav container d-none d-md-block ">
+        <div class="row justify-content-between">
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li><a href="" v-text="footernav1"></a></li>
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li><a href="" v-text="footernav2"></a></li>
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li v-for="site in footernav3" v-html="site.title"></li>
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li v-for="site in footernav4" v-html="site.title"></li>
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li v-for="site in footernav5" v-html="site.title"></li>
 
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li v-for="site in footernav6" v-html="site.title"></li>
+
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li v-for="site in footernav7" v-html="site.title"></li>
+
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li v-for="site in footernav8" v-html="site.title"></li>
+
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li v-for="site in footernav9" v-html="site.title"></li>
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li><a href="" v-text="footernav10"></a></li>
+            </ul>
+            <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <li><a href="" v-text="footernav11"></a></li>
+            </ul>
         </div>
 
     </div>
-    <div class="footer footer2 container-fluid">
-            <div class="foot container">
-                <div class="row justify-content-between">
-                    <div class="logo col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                        <img src="./images/footlogo.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="copyright col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-                        <p><a href="#">关于我们</a> 丨 <a href="#">网站说明</a> 丨 <a href="#">联系我们</a></p>
-                        <p>版权：河南经贸职业学院 计算机工程学院 Copyright 2018 All Rights Reserved</p>
-                    </div>
-                    <div class="code col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
-                        <img src="./images/code.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div> 
+
+</div>
+<div class="footer footer2 container-fluid">
+    <div class="foot container">
+        <div class="row justify-content-between">
+            <div class="logo col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <img src="./images/footlogo.png" class="img-fluid" alt="">
+            </div>
+            <div class="copyright col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                <p><a href="#">关于我们</a> 丨 <a href="#">网站说明</a> 丨 <a href="#">联系我们</a></p>
+                <p>版权：河南经贸职业学院 计算机工程学院 Copyright 2018 All Rights Reserved</p>
+            </div>
+            <div class="code col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <img src="./images/code.png" class="img-fluid" alt="">
+            </div>
+        </div>
     </div>
+</div>
 <!-- footer End -->
 
 
@@ -261,15 +208,17 @@
 
 
 
-
-        <script src="./js/jquery-latest.min.js"></script>
-        <!-- 导航栏js引入 -->
-        <script src="./js/js.js"></script>
-        <!-- 自己的js -->
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <!-- bootstarp -->
-        <script src="./js/jquery-1.9.1.min.js"></script>
-        <!-- bootstarp -->
+    <script src="./js/vue-2.4.0.js"></script>
+    <script src="./js/jquery-latest.min.js"></script>
+    <!-- nav js -->
+    <script src="./js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="./js/js.js"></script>
+    <!-- js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- bootstarp js -->
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <!-- jquery js -->
 
 
 </body>

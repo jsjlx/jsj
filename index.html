@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="Public" />
     <title>计算机工程学院</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -15,57 +16,55 @@
     <!-- swiper css -->
     <link rel="stylesheet" href="./font/iconfont.css">
     <!-- icon -->
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 
 <body>
     <div class="header">
         <div class="container-fluid logo">
-            <img class="img-fluid" src="./images/header.png">
+            <img class="img-fluid" src="./images/header2.png">
         </div>
 
         <div class="container-fluid nav">
             <div id="delete" class="container">
                 <div id='cssmenu'>
                     <ul>
-                        <li><a href='' v-text="nav1"></a></li>
+                        <li><a href='http://www.hnjmxy.cn/' v-text="nav1"></a></li>
                         <li><a href='./index.html' v-text="nav2"></a></li>
-                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav3"></a>
+                        <li class='active has-sub has-sub-b'><a href='./catalog.html' v-text="nav3"></a>
                             <ul>
                                 <li class='has-sub' v-for="site in site03" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav4"></a>
+                        <li class='active has-sub has-sub-b'><a href='./catalog.html' v-text="nav4"></a>
                             <ul>
                                 <li class='has-sub' v-for="site in site04" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active'><a href='#' v-text="nav5"></a></li>
-                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav6"></a>
+                        <li class='active'><a href='./catalog.html' v-text="nav5"></a></li>
+                        <li class='active has-sub has-sub-b'><a href='./catalog.html' v-text="nav6"></a>
                             <ul>
                                 <li class='has-sub' v-for="site in site06" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav7"></a>
+                        <li class='active has-sub has-sub-b'><a href='./catalog.html' v-text="nav7"></a>
                             <ul>
                                 <li class='has-sub' v-for="site in site07" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav8"></a>
+                        <li class='active has-sub has-sub-b'><a href='./catalog.html' v-text="nav8"></a>
                             <ul>
                                 <li class='has-sub' v-for="site in site08" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav9"></a>
+                        <li class='active has-sub has-sub-b'><a href='./catalog.html' v-text="nav9"></a>
                             <ul>
                                 <li class='has-sub' v-for="site in site09" v-html="site.url"></li>
                             </ul>
                         </li>
-                        <li class='active has-sub has-sub-b'><a href='#' v-text="nav10"></a>
+                        <li class='active has-sub has-sub-b'><a href='./catalog.html' v-text="nav10"></a>
                             <ul>
-                                <li class='has-sub'><a href='#'>企业简介</a></li>
-                                <li class='has-sub'><a href='#'>合作交流</a></li>
-                                <li class='has-sub'><a href='#'>学院概况</a></li>
-                                <li class='has-sub'><a href='#'>学院概况</a></li>
+                                <li class='has-sub' v-for="site in site10" v-html="site.url"></li>
                             </ul>
                         </li>
 
@@ -83,7 +82,7 @@
     <div id="banner" class="swiper-container banner container-fluid  d-none d-sm-block ">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img class="img-fluid" src="./images/banner5.png">
+                <img class="img-fluid" src="./images/banner1.jpg">
                 <div class="text">
                     <h2 v-html="title1"></h2>
                     <div>
@@ -92,7 +91,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img class="img-fluid" src="./images/banner4.png">
+                <img class="img-fluid" src="./images/banner2.jpg">
                 <div class="text">
                     <h2 v-html="title2"></h2>
                     <div>
@@ -114,7 +113,7 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <img class="img-fluid" src="./images/banner2.jpg">
+                <img class="img-fluid" src="./images/banner4.jpg">
                 <div class="text">
                     <h2 v-html="title4">
 
@@ -130,52 +129,49 @@
         </div>
         <!-- 如果需要分页器 -->
         <!-- <div class="swiper-pagination"></div> -->
-
         <!-- 如果需要导航按钮 -->
         <div class="swiper-button-prev" style="z-index: 999;"></div>
         <div class="swiper-button-next"></div>
-
         <!-- 如果需要滚动条 -->
         <!-- <div class="swiper-scrollbar"></div> -->
     </div>
     <!-- swiper END-->
 
-
     <!-- content Start -->
     <div class="content container ">
-        <div id="news" class="news col-12 justify-content-between">
+        <div id="news" class="news col-12 justify-content-center animated fadeInRightBig">
             <h3>
                 <span class="icon iconfont icon-news"></span>
-                <a href="#" title="点击查看更多">学院要闻 </a>
+                <a href="./catalog.html" title="点击查看更多">学院要闻 </a>
                 <span class="gd">
                     <a href="#"></a>
                 </span>
             </h3>
             <hr>
-            <div class="row row1 justify-content-between">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-12 news row justify-content-between">
-                    <div class="u-img col-3 col-md-4 col-lg-4 col-xl-4 ">
-                        <img src="./images/news1.png" class="img-fluid" alt="">
+            <div class="row row1 justify-content-around ">
+                <div class="col-md-4 col-12 news row justify-content-between">
+                    <div class="u-img col-3 col-md-4">
+                        <img src="./images/news1.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="title col-9 col-md-8 col-lg-8 col-xl-8">
+                    <div class="title col-9 col-md-8">
                         <h4><a href="./main.html" v-text="title1"></a></h4>
                         <p><a href="./main.html" v-text="p1"></a></p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-12 news row justify-content-between">
-                    <div class="u-img col-3 col-md-4 col-lg-4 col-xl-4 ">
-                        <img src="./images/news1.png" class="img-fluid" alt="">
+                <div class="col-md-4 col-12 news row justify-content-between">
+                    <div class="u-img col-3 col-md-4  ">
+                        <img src="./images/news2.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="title col-9 col-md-8 col-lg-8 col-xl-8">
+                    <div class="title col-9 col-md-8 ">
                         <h4><a href="./main.html" v-text="title2"></a></h4>
                         <p><a href="./main.html" v-text="p2"></a></p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-12 news row justify-content-between">
-                    <div class="u-img col-3 col-md-4 col-lg-4 col-xl-4 ">
-                        <img src="./images/news1.png" class="img-fluid" alt="">
+                    <div class="u-img col-3 col-md-4">
+                        <img src="./images/news3.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="title col-9 col-md-8 col-lg-8 col-xl-8">
+                    <div class="title col-9 col-md-8 ">
                         <h4><a href="./main.html" v-text="title3"></a></h4>
                         <p><a href="./main.html" v-text="p3"></a></p>
                     </div>
@@ -183,142 +179,109 @@
             </div>
             <!-- first news end -->
 
-            <div class="row row1 justify-content-between">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-12 news row justify-content-between">
-                    <div class="u-img col-3 col-md-4 col-lg-4 col-xl-4 ">
-                        <img src="./images/news1.png" class="img-fluid" alt="">
+            <div class="row row1 justify-content-around">
+                <div class="col-md-4 col-12 news row justify-content-between">
+                    <div class="u-img col-3 col-md-4">
+                        <img src="./images/news4.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="title col-9 col-md-8 col-lg-8 col-xl-8">
                         <h4><a href="./main.html" v-text="title4"></a></h4>
                         <p><a href="./main.html" v-text="p4"></a></p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-12 news row justify-content-between ">
-                    <div class="u-img col-3 col-md-4 col-lg-4 col-xl-4 ">
-                        <img src="./images/news1.png" class="img-fluid" alt="">
+                <div class="col-md-4 col-12 news row justify-content-between ">
+                    <div class="u-img col-3 col-md-4">
+                        <img src="./images/news5.png" class="img-fluid" alt="">
                     </div>
                     <div class="title col-9 col-md-8 col-lg-8 col-xl-8">
-                        <h4><a href="#" v-text="title5"></a></h4>
-                        <p><a href="#" v-text="p5"></a></p>
+                        <h4><a href="./main.html" v-text="title5"></a></h4>
+                        <p><a href="./main.html" v-text="p5"></a></p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-12 news row justify-content-between  ">
-                    <div class="u-img col-3 col-md-4 col-lg-4 col-xl-4 ">
-                        <img src="./images/news1.png" class="img-fluid" alt="">
+                <div class="col-md-4 col-12 news row justify-content-between  ">
+                    <div class="u-img col-3 col-md-4">
+                        <img src="./images/news6.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="title col-9 col-md-8 col-lg-8 col-xl-8 ">
-                        <h4><a href="#" v-text="title6"></a></h4>
-                        <p><a href="#" v-text="p6"></a> ,</p>
+                        <h4><a href="./main.html" v-text="title6"></a></h4>
+                        <p><a href="./main.html" v-text="p6"></a> ,</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- second news end -->
+
         <!-- news end -->
+
         <!-- inform start -->
-        <div class="inform-group  row ">
-            <div id="notice" class="notice col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="inform-group row justify-content-between">
+            <div id="notice" class="inform col-md-6  col-12">
                 <h3 class="col-12"><span class="icon iconfont icon-gonggao1"></span><a href="#">通知公告</a></h3>
                 <div class="hr row col-12 justify-content-between">
-                    <hr class="col-xl-10 col-lg-10 col-md-9 col-sm-10 col-9"><a href="" class="col-1">更多》</a>
+                    <hr class="col-10"><a href="./catalog.html" class="col-1">更多》</a>
                 </div>
-
-                <table class="table table-hover  ">
-                    <tbody>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10 col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche1"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm1"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche2"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm2"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche3"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm3"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche4"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm4"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche5"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm5"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche6"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm6"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche1}}</a></li>
+                    <li class="col-3" v-text="tm1"></li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche2}}</a></li>
+                    <li class="col-3" v-text="tm2"></li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche3}}</a></li>
+                    <li class="col-3" v-text="tm3"></li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche4}}</a></li>
+                    <li class="col-3" v-text="tm4"></li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche5}}</a></li>
+                    <li class="col-3" v-text="tm5"></li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche6}}</a></li>
+                    <li class="col-3" v-text="tm6"></li>
+                </ul>
             </div>
-
-
-            <div id="active" class="active col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div id="active" class="inform col-md-6  col-12">
                 <h3 class="col-12"><span class="icon iconfont icon-icon"></span><a href="#">&nbsp;社团活动</a></h3>
                 <div class="hr row col-12 justify-content-between">
-                    <hr class="col-xl-10 col-lg-10 col-md-9 col-sm-10 col-9"><a href="" class="col-1">更多》</a>
+                    <hr class=" col-10"><a href="./catalog.html" class="col-1">更多》</a>
                 </div>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche1}}</a></li>
+                    <li class="col-3" v-text="tm1">2014-12-12</li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche2}}</a></li>
+                    <li class="col-3" v-text="tm2">2014-12-12</li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche3}}</a></li>
+                    <li class="col-3" v-text="tm3">2014-12-12</li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche4}}</a></li>
+                    <li class="col-3" v-text="tm4">2014-12-12</li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche5}}</a></li>
+                    <li class="col-3" v-text="tm5">2014-12-12</li>
+                </ul>
+                <ul class="row justift-content-between ">
+                    <li class="col-9"><a href="./main.html"> <span class="icon iconfont icon-dian1"></span>{{affiche6}}</a></li>
+                    <li class="col-3" v-text="tm6">2014-12-12</li>
+                </ul>
 
-                <table class="table table-hover  ">
-                    <tbody>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10 col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche1"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm1"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche2"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm2"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche3"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm3"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche4"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm4"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche5"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm5"></td>
-                        </tr>
-                        <tr class=" row justify-content-between col-xl-11 col-lg-10  col-md-9 col-sm-12">
-                            <td class="col-xl-9 col-lg-9 col-md-9 col-sm-9 col-9">
-                                <li><a href="#" v-text="affiche6"></a></li>
-                            </td>
-                            <td class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3" v-text="tm6"></td>
-                        </tr>
-                    </tbody>
-                </table>
+
             </div>
         </div>
         <!-- inform end -->
 
         <!-- specialty start -->
-        <div class="specialty">
+        <div class="specialty" id="specialty">
             <div class="title justify-content-center row align-items-start">
                 <div>
                     <li class="row"><span class="icon iconfont icon-kecheng- col-12"></span></li>
@@ -327,89 +290,85 @@
                     </li>
                 </div>
             </div>
-
             <div class="subjects row justify-content-around">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects1.png">
+                        <p>
+                            <a href="#" v-text="subjects1"></a>
+                        </p>
                     </div>
-                    <h4><a href="#">计算机软件与技术</a></h4>
-                    <p>
-                        <a href="#">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a>
-                    </p>
-
+                    <h4><a href="#" v-text="title1"></a></h4>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects2.png">
+                        <p>
+                            <a href="#" v-text="subjects2"></a>
+                        </p>
                     </div>
-                    <h4><a href="">计算机应用技术（普招）</a></h4>
-                    <p>
-                        <a href="">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a>
-                    </p>
-
+                    <h4><a href="" v-text="title2"></a></h4>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects3.png">
+                        <p><a href="" v-text="subjects3"></a>
+                        </p>
                     </div>
-                    <h4><a href="">计算机应用技术（对口）</a></h4>
-                    <p><a href="">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a>
-                    </p>
-
+                    <h4><a href="" v-text="title3"></a></h4>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects4.png">
+                        <p><a href="" v-text="subjects4"></a>
+                        </p>
                     </div>
-                    <h4><a href="">数字媒体应用技术</a></h4>
-                    <p><a href="">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a>
-                    </p>
+                    <h4><a href="" v-text="title4"></a></h4>
+
 
                 </div>
             </div>
-
-
-            <div class="subjects row justify-content-around">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+            <div class="subjects subjects1 row justify-content-around">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects5.png">
+                        <p>
+                            <a href="" v-text="subjects5"></a>
+                        </p>
                     </div>
-                    <h4><a href="">信息安全与管理</a></h4>
-                    <p>
-                        <a href="">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a></p>
-
+                    <h4><a href="" v-text="title5"></a></h4>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects6.png">
+                        <p>
+                            <a href="" v-text="subjects6"></a>
+                        </p>
                     </div>
-                    <h4><a href="">动漫制作技术</a></h4>
-                    <p>
-                        <a href="">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a></p>
-
+                    <h4><a href="" v-text="title6"></a></h4>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects7.png">
+                        <p>
+                            <a href="" v-text="subjects7"></a>
+                        </p>
                     </div>
-                    <h4><a href="">动漫制作技术（软件）</a></h4>
-                    <p>
-                        <a href="">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a></p>
-
+                    <h4><a href="" v-text="title7"></a></h4>
                 </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5 subjects">
+                <div class="col-md-3 col-5 subjects">
                     <div class="u-img">
                         <img class="img-fluid" src="./images/subjects8.png">
+                        <p>
+                            <a href="" v-text="subjects8"></a>
+                        </p>
                     </div>
-                    <h4><a href="">计算机软件与技术（软件）</a></h4>
-                    <p>
-                        <a href="">这里是对计算机应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介这里是对计算机应用技术软件类的一些简介</a></p>
+                    <h4><a href="" v-text="title8"></a></h4>
+
+
 
                 </div>
             </div>
-
-
         </div>
         <!-- specialty End -->
 
@@ -426,22 +385,22 @@
             <div class="swiper-container case">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./images/teacher1.png" class="img-fluid" alt="">
+                        <img src="./images/teacher1.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/teacher1.png" class="img-fluid" alt="">
+                        <img src="./images/teacher2.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/teacher1.png" class="img-fluid" alt="">
+                        <img src="./images/teacher3.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/teacher1.png" class="img-fluid" alt="">
+                        <img src="./images/teacher4.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/teacher1.png" class="img-fluid" alt="">
+                        <img src="./images/teacher5.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/teacher1.png" class="img-fluid" alt="">
+                        <img src="./images/teacher6.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
 
@@ -456,46 +415,46 @@
 
         <!-- cooperation and video Start -->
         <div class="cooperation row">
-            <div id="school" class="school col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <div id="school" class="school col-md-6 col-sm-12">
                 <h3 class="col-12"><span class="icon iconfont icon-webicon306"></span> <a href="#">校企合作</a></h3>
                 <div class="hr row col-12 justify-content-between">
-                    <hr class="col-xl-10 col-lg-10 col-md-9 col-sm-10 col-9"><a href="" class="col-1">更多》</a>
+                    <hr class="col-9"><a href="./catalog.html" class="col-1">更多》</a>
                 </div>
-                <div class="col-xl-12 cooperation1">
+                <div class="cooperation1">
                     <h4 v-text="company1"></h4>
                     <p class="row">
-                        <span class="time col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4" v-text="tm1"></span>
-                        <span class="src col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" v-text="src1">
+                        <span class="time col-4" v-text="tm1"></span>
+                        <span class="src col-6" v-text="src1">
                             <span class="icon iconfont icon-dizhi2"></span>
                         </span>
-                        <span class=" col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2"><a href="#">进入》</a></span></p>
+                        <span class=" col-2"><a href="#">进入》</a></span></p>
                 </div>
-                <div class="col-xl-12 cooperation1">
+                <div class="cooperation1">
                     <h4 v-text="company2"></h4>
                     <p class="row">
-                        <span class="time col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4" v-text="tm2"></span>
-                        <span class="src col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" v-text="src2">
+                        <span class="time col-4" v-text="tm2"></span>
+                        <span class="src col-6" v-text="src2">
                             <span class="icon iconfont icon-dizhi2"></span>
                         </span>
-                        <span class=" col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2"><a href="#">进入》</a></span></p>
+                        <span class=" col-2"><a href="#">进入》</a></span></p>
                 </div>
-                <div class="col-xl-12 cooperation1">
+                <div class="cooperation1">
                     <h4 v-text="company3"></h4>
                     <p class="row">
-                        <span class="time col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4" v-text="tm3"></span>
-                        <span class="src col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" v-text="src3">
+                        <span class="time col-4" v-text="tm3"></span>
+                        <span class="src col-6" v-text="src3">
                             <span class="icon iconfont icon-dizhi2"></span>
                         </span>
-                        <span class=" col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2"><a href="#">进入》</a></span></p>
+                        <span class="col-2"><a href="#">进入》</a></span></p>
                 </div>
-                <div class="col-xl-12 cooperation1">
+                <div class="cooperation1 cooperation2">
                     <h4 v-text="company4"></h4>
                     <p class="row">
-                        <span class="time col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4" v-text="tm4"></span>
-                        <span class="src col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6" v-text="src4">
+                        <span class="time col-4" v-text="tm4"></span>
+                        <span class="src col-6" v-text="src4">
                             <span class="icon iconfont icon-dizhi2"></span>
                         </span>
-                        <span class=" col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2"><a href="#">进入》</a></span></p>
+                        <span class=" col-2"><a href="#">进入》</a></span></p>
                 </div>
             </div>
             <!-- school End -->
@@ -508,10 +467,8 @@
                 <div class="video col-xl-12">
                     <video class="col-xl-12" src="./video/xxgl.mp4" controls></video>
                 </div>
-
             </div>
             <!-- scenery End -->
-
         </div>
         <!-- cooperation and video End -->
     </div>
@@ -521,41 +478,41 @@
     <div class="footer footer1 container-fluid ">
         <div id="footernav" class="footernav container d-none d-md-block ">
             <div class="row justify-content-between">
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li><a href="" v-text="footernav1"></a></li>
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li><a href="" v-text="footernav2"></a></li>
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li v-for="site in footernav3" v-html="site.title"></li>
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li v-for="site in footernav4" v-html="site.title"></li>
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li v-for="site in footernav5" v-html="site.title"></li>
 
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li v-for="site in footernav6" v-html="site.title"></li>
 
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li v-for="site in footernav7" v-html="site.title"></li>
 
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li v-for="site in footernav8" v-html="site.title"></li>
 
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li v-for="site in footernav9" v-html="site.title"></li>
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li><a href="" v-text="footernav10"></a></li>
                 </ul>
-                <ul class=" col-xl-1 col-lg-1 col-md-1">
+                <ul class="col-md-1">
                     <li><a href="" v-text="footernav11"></a></li>
                 </ul>
             </div>
@@ -566,23 +523,30 @@
     <div class="footer footer2 container-fluid">
         <div class="foot container">
             <div class="row justify-content-between">
-                <div class="logo col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <div class="logo col-3">
                     <img src="./images/footlogo.png" class="img-fluid" alt="">
                 </div>
                 <div class="copyright col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
                     <p><a href="#">关于我们</a> 丨 <a href="#">网站说明</a> 丨 <a href="#">联系我们</a></p>
                     <p>版权：河南经贸职业学院 计算机工程学院 Copyright 2018 All Rights Reserved</p>
                 </div>
-                <div class="code col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3">
+                <div class="code col-3">
                     <img src="./images/code.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
     </div>
     <!-- footer End -->
-
-
-
+    <script>
+        // function getsrc() {
+        //     var strUrl = window.location.href;
+        //     var arrUrl = strUrl.split("/");
+        //     var strPage = arrUrl[arrUrl.length - 1];
+        //     return strPage;
+        // }
+        // var src = getsrc();
+        //获取当前页面的文件名字
+    </script>
     <!-- link -->
     <script src="./js/vue-2.4.0.js"></script>
     <script src="./js/jquery-latest.min.js"></script>
@@ -595,7 +559,6 @@
     <!-- bootstarp js -->
     <script src="./js/jquery-1.9.1.min.js"></script>
     <!-- jquery js -->
-
 
 </body>
 
